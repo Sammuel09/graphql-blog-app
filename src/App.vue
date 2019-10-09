@@ -1,8 +1,21 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <!-- <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> -->
+       <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <router-link class="navbar-item" to="/">Blog App</router-link>
+
+                    <button class="button navbar-burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
     </div>
     <router-view/>
   </div>
